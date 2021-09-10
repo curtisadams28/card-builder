@@ -1,12 +1,11 @@
-let img;
-html2canvas(document.querySelector("#capture")).then(canvas => {
-  img = canvas.toDataURL("image/png");
-});
-
-function download_image(){
-  let image = img;
-  let link = document.createElement('a');
-  link.download = "my-image.png";
-  link.href = image;
-  link.click();
-}
+// Loads the file
+const input = document.querySelector('#file-selector');
+input.addEventListener('change', function(e) {
+  const reader = new FileReader();
+  reader.onload = function() {
+    let parsed = parser(reader.result)
+    console.log(parsed);
+    console.log(reader.result);
+  }
+  reader.readAsText(input.files[0]);
+}, false);

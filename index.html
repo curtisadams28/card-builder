@@ -4,16 +4,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  
   <title>Document</title>
   
   
 </head>
 <body>
-  <div id="capture" style="padding: 10px; background: #f5da55; width: 5000px; height: 5000px !important;">
+  <header>
+    <h1>Card Builder</h1>
+    <input type="file" id="file-selector" accept=".md">
+    <button onclick="download_image()">Download</button>
+  </header>
+  
+  <div id="capture" style="padding: 10px; background: #f5da55;">
     <h1>hi</h1>
   </div>
-  <button onclick="download_image()">Download</button>
-<script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-<script src="main.js"></script>
+
+
+
 </body>
+<script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<script src="js/parser.js"></script>
+<script src="js/builder.js"></script>
+<script src="js/renderer.js"></script>
+<script src="js/downloader.js"></script>
+<script src="main.js"></script>
+
 </html>
