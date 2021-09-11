@@ -1,13 +1,39 @@
 body {
   margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 header {
   background-color: #1b1c1d;
+  height: 10%;
+
 }
 header h1 {
   color: #fff;
-  padding: 30px;
+  padding: 10px;
   margin: 0;
+}
+
+.image-container {
+  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 500px);
+  grid-template-rows: repeat(10, 500px);
+}
+
+.card {
+  padding: 40px;
+}
+
+.card:nth-child(odd) {
+  background-color: #dce4ee;
+}
+
+.card p::first-line {
+  font-size: 20px;
+  font-weight: bold;
 }
