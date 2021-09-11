@@ -1,7 +1,6 @@
 function parser(rawText) {
   let text = rawText;
   let textArray = [];
-  
 
   text = removeCarriage(text);
   text = removeLinks(text);

@@ -15,11 +15,24 @@
   <header>
     <h1>Card Builder</h1>
     <div class="buttons">
+      <select class="button colour-selector" name="colour-selector" id="color">
+        <option value="transparent">None</option>
+        <option value="#e04c41">Red</option>
+        <option value="#e0a141">Orange</option>
+        <option value="#e0d041">Yellow</option>
+        <option value="#81e041">Green</option>
+        <option value="#41bbe0">Blue</option>
+        <option value="#4641e0">Purple</option>
+        <option value="#e04198">Pink</option>
+        <option value="#4a3f37">Brown</option>
+        <option value="#111112">Black</option>
+        <option value="#8a8a8a">Medium Grey</option>
+        <option value="#c7c7c7">Light Grey</option>
+      </select>
       <label for="file-selector" class="button">Select file</label>
       <input class="file-input" type="file" id="file-selector" accept=".md">
       <button class="button" onclick="download_image()">Download</button>
     </div>
-    
 
   </header>
   <div class="container">

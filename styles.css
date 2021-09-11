@@ -28,7 +28,7 @@ header h1 {
 
 .button {
   border: 0;
-  background-color: #357e5f;
+  background-color: #465375;
   font-size: 16px;
   font-family: Georgia;
   color: #fff;
@@ -39,8 +39,13 @@ header h1 {
 }
 
 .button:hover {
-  background-color: #469b78;
+  background-color: #6072a5;
   cursor: pointer;
+}
+
+.colour-selector:focus {
+  outline: 0;
+  background-color: #6072a5;
 }
 
 .container {
@@ -63,8 +68,5 @@ header h1 {
 .card {
   padding: 40px;
   font-size: 40px;
-}
-
-.card:nth-child(odd) {
-  background-color: #dce4ee;
+  border: 30px solid transparent;
 }
