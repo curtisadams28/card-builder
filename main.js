@@ -5,10 +5,10 @@ const input = document.querySelector('#file-selector');
 input.addEventListener('change', function(e) {
   const reader = new FileReader();
   reader.onload = function() {
+    clearNodes();
     let parsed = parser(reader.result);
     let built = builder(parsed);
-    console.log(built);
-
+    render(built);
 
     html2canvas(document.querySelector("#capture")).then(canvas => {
       img = canvas.toDataURL("image/png");
@@ -16,3 +16,8 @@ input.addEventListener('change', function(e) {
   }
   reader.readAsText(input.files[0]);
 }, false);
+
+
+function clearNodes() {
+  document.getElementById('grid').innerHTML = '';
+}

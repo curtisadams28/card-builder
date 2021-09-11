@@ -14,15 +14,21 @@
 <body>
   <header>
     <h1>Card Builder</h1>
+    <div class="buttons">
+      <label for="file-selector" class="button">Select file</label>
+      <input class="file-input" type="file" id="file-selector" accept=".md">
+      <button class="button" onclick="download_image()">Download</button>
+    </div>
     
-    <input type="file" id="file-selector" accept=".md">
-    <button onclick="download_image()">Download</button>
+
   </header>
-  
-  <div id="capture" style="padding: 10px; background: #f5da55;">
-    <h1>hi</h1>
-    <p id="test">TEst</p>
+  <div class="container">
+    <div id="capture">
+      <div id="grid" class="grid">
+      </div>
+    </div>
   </div>
+
 
 
 
